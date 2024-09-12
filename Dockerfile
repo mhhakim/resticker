@@ -79,7 +79,7 @@ RUN curl -sL -o go-cron.tar.gz https://github.com/djmaze/go-cron/archive/v${GO_C
 #
 FROM alpine:3.20
 
-RUN apk add --update --no-cache ca-certificates fuse nfs-utils openssh tzdata bash curl docker-cli gzip tini
+RUN apk add --update --no-cache ca-certificates fuse nfs-utils openssh tzdata bash curl docker-cli gzip tini mariadb-client
 
 ENV RESTIC_REPOSITORY /mnt/restic
 
